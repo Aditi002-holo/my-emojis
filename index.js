@@ -43,3 +43,20 @@ shiftBtn.addEventListener('click',function() {
     myEmojis.shift();
     renderEmojis();
 })
+
+
+// Collections
+
+const collectionBtn = document.getElementById('collection-btn');
+const collectionsEle = document.querySelector('.collections');
+console.log(collectionsEle)
+
+collectionBtn.addEventListener('click', function() {
+    if ( collectionBtn.textContent === "Show my collections" ) {
+        collectionBtn.textContent = "Hide my collections";
+        collectionsEle.classList.toggle('disappear');
+    } else {
+        collectionBtn.textContent = "Show my collections";
+        collectionsEle.classList.toggle('disappear');
+    }
+})
